@@ -1,0 +1,22 @@
+<package type="addon" name="binarymanager-s3" version="1.0.0">
+  <title>S3 Binary Manager</title>
+  <description>
+    Store Nuxeo's binaries (attached documents) in an Amazon S3 bucket.
+
+    IMPORTANT: After installation, some configuration steps must be taken
+    in order for this addon to be enabled and use the proper credentials.
+    Check the linked page for installation instructions.
+  </description>
+  <home-page>https://doc.nuxeo.com/x/HABu</home-page>
+  <platforms>
+    <platform>dm-5.4.1</platform>
+  </platforms>
+  <hotreload-support>false</hotreload-support>
+  <supported>false</supported>
+  <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance>
+  <production-state>testing</production-state>
+  <nuxeo-validation>none</nuxeo-validation>
+  <vendor>Nuxeo</vendor>
+  <license>LGPL</license>
+  <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
+</package>

@@ -1,0 +1,10 @@
+<project name="binarymanager-s3" default="marketplace">
+  <property name="build.dir" value="target/marketplace" />
+  <target name="marketplace">
+    <copy todir="${build.dir}">
+      <fileset dir="marketplace">
+      </fileset>
+    </copy>
+    <zip destfile="target/binarymanager-s3-1.0.0.zip" basedir="${build.dir}"/>
+  </target>
+</project>
