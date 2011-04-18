@@ -1,5 +1,5 @@
-<package type="addon" name="binarymanager-s3" version="1.0.0">
-  <title>S3 Binary Manager</title>
+<package type="addon" name="amazon-s3-online-storage" version="1.0.0">
+  <title>Amazon S3 Online Storage</title>
   <description>
     Store Nuxeo's binaries (attached documents) in an Amazon S3 bucket.
 

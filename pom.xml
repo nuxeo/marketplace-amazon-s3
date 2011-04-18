@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.nuxeo.marketplace</groupId>
-  <artifactId>binarymanager-s3</artifactId>
+  <artifactId>amazon-s3-online-storage</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>Utility POM to retrieve nuxeo-core-binarymanager-s3</name>
