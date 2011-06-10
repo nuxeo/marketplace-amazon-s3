@@ -1,4 +1,4 @@
-<package type="addon" name="amazon-s3-online-storage" version="1.0.0">
+<package type="addon" name="amazon-s3-online-storage" version="1.0.1">
   <title>Amazon S3 Online Storage</title>
   <description>
     Amazon S3 Online Storage is a component of the Nuxeo platform
@@ -11,7 +11,7 @@
   </description>
   <home-page>https://doc.nuxeo.com/x/HABu</home-page>
   <platforms>
-    <platform>dm-5.4.1</platform>
+    <platform>dm-5.4.2</platform>
   </platforms>
   <hotreload-support>false</hotreload-support>
   <supported>false</supported>
