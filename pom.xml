@@ -1,46 +1,38 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>org.nuxeo.marketplace</groupId>
-  <artifactId>amazon-s3-online-storage</artifactId>
-  <version>1.0.1</version>
-  <packaging>pom</packaging>
-  <name>Utility POM to retrieve nuxeo-core-binarymanager-s3</name>
+  <parent>
+    <groupId>org.nuxeo.ecm.distribution</groupId>
+    <artifactId>nuxeo-distribution</artifactId>
+    <version>5.6-SNAPSHOT</version>
+  </parent>
 
   <properties>
-    <bundlesDirectory>target/marketplace/bundles/</bundlesDirectory>
-    <libDirectory>target/marketplace/lib/</libDirectory>
+    <marketplace.s3binaries.version>1.0.2-SNAPSHOT</marketplace.s3binaries.version>
   </properties>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.1</version>
-        <configuration>
-          <artifactItems>
-            <artifactItem>
-              <groupId>org.nuxeo.ecm.core</groupId>
-              <artifactId>nuxeo-core-binarymanager-s3</artifactId>
-              <version>5.4.2</version>
-              <overWrite>true</overWrite>
-              <outputDirectory>${bundlesDirectory}</outputDirectory>
-            </artifactItem>
-            <artifactItem>
-              <groupId>com.amazonaws</groupId>
-              <artifactId>aws-java-sdk</artifactId>
-              <version>1.1.8</version>
-              <overWrite>true</overWrite>
-              <outputDirectory>${libDirectory}</outputDirectory>
-            </artifactItem>
-          </artifactItems>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+  <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
+  <artifactId>amazon-s3-online-storage-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>Nuxeo S3 Storage Marketplace Parent</name>
+  <version>${marketplace.s3binaries.version}</version>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
+        <artifactId>ear</artifactId>
+        <version>${marketplace.s3binaries.version}</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
+        <artifactId>marketplace</artifactId>
+        <version>${marketplace.s3binaries.version}</version>
+        <type>zip</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <repositories>
     <repository>
@@ -65,17 +57,11 @@
       </snapshots>
     </repository>
   </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
-      <name>Nuxeo virtual release repository</name>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
+
+  <modules>
+    <module>ear</module>
+    <module>marketplace</module>
+    <!--<module>ftest/selenium</module>-->
+  </modules>
+
 </project>

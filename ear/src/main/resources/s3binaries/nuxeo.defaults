@@ -10,3 +10,5 @@ nuxeo.s3storage.crypt.keystore.file=
 nuxeo.s3storage.crypt.keystore.password=
 nuxeo.s3storage.crypt.key.alias=
 nuxeo.s3storage.crypt.key.password=
+
+nuxeo.core.binarymanager=org.nuxeo.ecm.core.storage.sql.S3BinaryManager

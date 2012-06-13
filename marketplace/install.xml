@@ -1,8 +1,0 @@
-<install>
-  <copy file="${package.root}/bundles/nuxeo-core-binarymanager-s3-5.4.2.jar" todir="${env.bundles}" overwrite="true" />
-  <copy file="${package.root}/lib/aws-java-sdk-1.1.8.jar" todir="${env.lib}" overwrite="true" />
-  <copy file="${package.root}/templates/s3binaries/nuxeo.defaults" todir="${env.home}/../templates/s3binaries" overwrite="true" ignore="not Platform.isTomcat()" />
-  <copy file="${package.root}/templates/s3binaries/nuxeo.defaults" todir="${env.ear}/../../../../templates/s3binaries" overwrite="true" ignore="not Platform.isJBoss()" />
-  <copy file="${package.root}/templates/s3binaries/nxserver/config/s3binarymanager.properties" todir="${env.home}/../templates/s3binaries/nxserver/config" overwrite="true" ignore="not Platform.isTomcat()" />
-  <copy file="${package.root}/templates/s3binaries/nxserver/config/s3binarymanager.properties" todir="${env.ear}/../../../../templates/s3binaries/nxserver/config" overwrite="true" ignore="not Platform.isJBoss()" />
-</install>
