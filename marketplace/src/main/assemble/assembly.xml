@@ -12,6 +12,7 @@
       <fileset dir="src/main/resources" />
       <filterset>
         <filter token="VERSION" value="${marketplace.s3binaries.version}" />
+        <filter token="DISTVERSION" value="${nuxeo.distribution.version}" />
       </filterset>
     </copy>
     <copy todir="${maven.project.build.directory}">
