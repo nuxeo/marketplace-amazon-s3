@@ -35,6 +35,10 @@
     <exec executable="s3cmd">
       <arg line="ls s3://nuxeo-mp-s3-test" />
     </exec>
+    <echo message="Emptying bucket." />
+    <exec executable="s3cmd">
+      <arg line="del s3://nuxeo-mp-s3-test/b6d4b6406db3da910cd75e2c1b4c6e3b" />
+    </exec>
     <echo message="Destroying bucket." />
     <exec executable="s3cmd">
       <arg line="rb s3://nuxeo-mp-s3-test" />
