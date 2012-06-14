@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
- <parent>
+  <parent>
     <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
     <artifactId>amazon-s3-online-storage-parent</artifactId>
     <version>1.0.2-SNAPSHOT</version>
@@ -16,7 +16,7 @@
   <description>Nuxeo S3 Storage EAR</description>
 
   <dependencies>
-      <dependency>
+    <dependency>
       <groupId>org.nuxeo.ecm.distribution</groupId>
       <artifactId>nuxeo-distribution-cap</artifactId>
       <type>pom</type>

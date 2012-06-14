@@ -61,7 +61,15 @@
   <modules>
     <module>ear</module>
     <module>marketplace</module>
-    <!--<module>ftest/selenium</module>-->
   </modules>
+
+  <profiles>
+    <profile>
+      <id>itest</id>
+      <modules>
+        <module>ftest/webdriver</module>
+      </modules>
+    </profile>
+  </profiles>
 
 </project>
