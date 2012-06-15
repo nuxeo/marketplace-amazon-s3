@@ -7,15 +7,15 @@
     <version>5.6-SNAPSHOT</version>
   </parent>
 
-  <properties>
-    <marketplace.s3binaries.version>1.0.2-SNAPSHOT</marketplace.s3binaries.version>
-  </properties>
-
   <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
   <artifactId>amazon-s3-online-storage-parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo S3 Storage Marketplace Parent</name>
-  <version>${marketplace.s3binaries.version}</version>
+  <version>1.0.2-SNAPSHOT</version>
+
+  <properties>
+    <marketplace.s3binaries.version>1.0.2-SNAPSHOT</marketplace.s3binaries.version>
+  </properties>
 
   <dependencyManagement>
     <dependencies>
