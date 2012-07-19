@@ -14,9 +14,9 @@
     <platform>cap-@DISTVERSION@</platform>
   </platforms>
   <hotreload-support>false</hotreload-support>
-  <supported>false</supported>
+  <supported>true</supported>
   <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance>
-  <production-state>testing</production-state>
+  <production-state>production_ready</production-state>
   <nuxeo-validation>nuxeo_certified</nuxeo-validation>
   <vendor>Nuxeo</vendor>
   <license>LGPL</license>
