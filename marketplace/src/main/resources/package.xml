@@ -17,7 +17,7 @@
   <supported>false</supported>
   <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance>
   <production-state>testing</production-state>
-  <nuxeo-validation>none</nuxeo-validation>
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
   <vendor>Nuxeo</vendor>
   <license>LGPL</license>
   <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
