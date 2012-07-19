@@ -5,7 +5,7 @@
 
   <groupId>org.nuxeo.marketplace</groupId>
   <artifactId>amazon-s3-online-storage</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>pom</packaging>
   <name>Utility POM to retrieve nuxeo-core-binarymanager-s3</name>
 
@@ -25,7 +25,7 @@
             <artifactItem>
               <groupId>org.nuxeo.ecm.core</groupId>
               <artifactId>nuxeo-core-binarymanager-s3</artifactId>
-              <version>5.4.2</version>
+              <version>5.5</version>
               <overWrite>true</overWrite>
               <outputDirectory>${bundlesDirectory}</outputDirectory>
             </artifactItem>

@@ -5,6 +5,6 @@
       <fileset dir="marketplace">
       </fileset>
     </copy>
-    <zip destfile="target/amazon-s3-online-storage-1.0.1.zip" basedir="${build.dir}"/>
+    <zip destfile="target/amazon-s3-online-storage-1.0.2.zip" basedir="${build.dir}"/>
   </target>
 </project>
