@@ -15,7 +15,7 @@
   </platforms>
   <hotreload-support>false</hotreload-support>
   <supported>true</supported>
-  <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance>
+  <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
   <production-state>production_ready</production-state>
   <nuxeo-validation>nuxeo_certified</nuxeo-validation>
   <vendor>Nuxeo</vendor>
