@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
     <artifactId>amazon-s3-online-storage-parent</artifactId>
-    <version>1.1.1</version>
+    <version>1.2-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
