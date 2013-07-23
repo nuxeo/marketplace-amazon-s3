@@ -19,6 +19,6 @@
   <production-state>production_ready</production-state>
   <nuxeo-validation>nuxeo_certified</nuxeo-validation>
   <vendor>Nuxeo</vendor>
-  <license>LGPL</license>
-  <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
+  <license>LGPL</license>
+  <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
 </package>
