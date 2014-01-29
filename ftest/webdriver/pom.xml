@@ -4,7 +4,7 @@
     <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
     <artifactId>amazon-s3-online-storage-parent</artifactId>
     <version>1.4.1-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
+    <relativePath>../../pom.xml</relativePath>
   </parent>
 
   <artifactId>amazon-s3-online-storage-webdriver-tests</artifactId>
