@@ -1,7 +1,10 @@
-<project name="nuxeo-assembly" default="build" xmlns:nx="urn:nuxeo-build"
-  xmlns:artifact="urn:nuxeo-artifact">
+<project name="s3-assembly"
+         default="build"
+         xmlns:nx="urn:nuxeo-build"
+         xmlns:artifact="urn:nuxeo-artifact">
   <taskdef resource="org/nuxeo/build/antlib.xml" uri="urn:nuxeo-build" />
-  <taskdef resource="org/nuxeo/build/artifact/antlib.xml" uri="urn:nuxeo-artifact" />
+  <taskdef resource="org/nuxeo/build/artifact/antlib.xml"
+           uri="urn:nuxeo-artifact" />
 
   <target name="init" unless="init.done">
     <property name="outdir" value="${maven.project.build.directory}" />
@@ -14,22 +17,24 @@
   <target name="expand">
     <artifact:nuxeo-expand includeTestScope="true" />
     <artifact:print output="${outdir}/artifacts-s3binaries.properties"
-      mode="sdk" />
+                    mode="sdk" />
     <artifact:print output="${outdir}/test-artifacts-s3binaries.properties"
-      mode="sdk" scopes="test" />
+                    mode="sdk"
+                    scopes="test" />
     <artifact:print output="${outdir}/dependency-tree.log" />
   </target>
 
   <target name="build" depends="init" description="Build Nuxeo S3 storage">
-    <echo>Building default Nuxeo S3 storage EAR</echo>
+    <echo level="info">Building default Nuxeo S3 storage EAR</echo>
     <delete failonerror="false" dir="${nuxeo.ear}" />
     <mkdir dir="${nuxeo.ear}" />
     <antcall target="build-standard" />
     <antcall target="build-resources" />
   </target>
 
-  <target name="build-standard" description="Build default distribution"
-    depends="init">
+  <target name="build-standard"
+          description="Build default distribution"
+          depends="init">
     <copy todir="${nuxeo.ear}/bundles" overwrite="true">
       <artifact:set>
         <includes>
@@ -40,16 +45,15 @@
 
     <antcall target="third-party-libraries" />
 
-    <copy file="${outdir}/artifacts-s3binaries.properties" todir="${nuxeo.ear}" />
-    <copy file="${outdir}/test-artifacts-s3binaries.properties" todir="${nuxeo.ear}" />
+    <copy file="${outdir}/artifacts-s3binaries.properties"
+          todir="${nuxeo.ear}" />
+    <copy file="${outdir}/test-artifacts-s3binaries.properties"
+          todir="${nuxeo.ear}" />
 
-    <zip
-      destfile="${outdir}/${maven.project.artifactId}-${marketplace.s3binaries.version}.zip"
-      basedir="${nuxeo.ear}" />
-    <artifact:attach
-      file="${outdir}/${maven.project.artifactId}-${marketplace.s3binaries.version}.zip"
-      target="${maven.project.groupId}:${maven.project.artifactId}"
-      type="zip" />
+    <zip destfile="${outdir}/${maven.project.artifactId}-${marketplace.s3binaries.version}.zip"
+         basedir="${nuxeo.ear}" />
+    <artifact:attach file="${outdir}/${maven.project.artifactId}-${marketplace.s3binaries.version}.zip"
+                     type="zip" />
   </target>
 
   <target name="third-party-libraries">
@@ -75,13 +79,11 @@
       <fileset dir="src/main/resources" />
     </copy>
 
-    <zip
-      destfile="${outdir}/${maven.project.artifactId}-${marketplace.s3binaries.version}-resources.zip"
-      basedir="${outdir}/template-s3binaries" />
-    <artifact:attach
-      file="${outdir}/${maven.project.artifactId}-${maven.project.version}-resources.zip"
-      target="${maven.project.groupId}:${maven.project.artifactId}"
-      type="zip" classifier="resources" />
+    <zip destfile="${outdir}/${maven.project.artifactId}-${marketplace.s3binaries.version}-resources.zip"
+         basedir="${outdir}/template-s3binaries" />
+    <artifact:attach file="${outdir}/${maven.project.artifactId}-${maven.project.version}-resources.zip"
+                     type="zip"
+                     classifier="resources" />
   </target>
 
 </project>
