@@ -36,8 +36,7 @@
     <!-- s3binaries template -->
     <unzip dest="${maven.project.build.directory}/marketplace/install/templates"
            overwrite="true">
-      <artifact:resolveFile key="${maven.project.groupId}:ear:${marketplace.s3binaries.version}:zip"
-                            classifier="resources" />
+      <artifact:resolveFile key="${maven.project.groupId}:ear:${marketplace.s3binaries.version}:zip:resources" />
     </unzip>
 
     <zip destfile="${maven.project.build.directory}/${maven.project.artifactId}-${marketplace.s3binaries.version}.zip"
