@@ -3,17 +3,17 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>5.9.5-SNAPSHOT</version>
+    <version>5.9.6-SNAPSHOT</version>
   </parent>
 
   <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
   <artifactId>amazon-s3-online-storage-parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo S3 Storage Marketplace Parent</name>
-  <version>1.4.4-SNAPSHOT</version>
+  <version>1.4.5-SNAPSHOT</version>
 
   <properties>
-    <marketplace.s3binaries.version>1.4.4-SNAPSHOT</marketplace.s3binaries.version>
+    <marketplace.s3binaries.version>1.4.5-SNAPSHOT</marketplace.s3binaries.version>
   </properties>
 
   <dependencyManagement>
