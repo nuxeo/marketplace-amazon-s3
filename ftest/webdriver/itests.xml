@@ -9,7 +9,6 @@
   <property name="out.dir" value="${maven.project.build.directory}" />
   <property name="classifier" value="nuxeo-cap" />
   <property name="nuxeo.wizard.done" value="true" />
-  <property name="wizard.preset" value="nuxeo-dm" />
 
   <unzip dest="${out.dir}/" overwrite="false">
     <artifact:resolveFile key="org.nuxeo:nuxeo-ftest::zip" />
