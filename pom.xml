@@ -10,7 +10,7 @@
   <artifactId>amazon-s3-online-storage-parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo S3 Storage Marketplace Parent</name>
-  <version>1.5</version>
+  <version>1.5-SNAPSHOT</version>
 
   <properties>
     <marketplace.s3binaries.version>1.5</marketplace.s3binaries.version>
