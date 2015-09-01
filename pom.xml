@@ -27,6 +27,13 @@
       </dependency>
       <dependency>
         <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
+        <artifactId>ear</artifactId>
+        <version>${marketplace.s3binaries.version}</version>
+        <classifier>resources</classifier>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
         <artifactId>marketplace</artifactId>
         <version>${marketplace.s3binaries.version}</version>
         <type>zip</type>

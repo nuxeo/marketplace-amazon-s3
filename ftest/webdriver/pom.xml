@@ -27,6 +27,19 @@
       <artifactId>nuxeo-functional-tests</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
+      <artifactId>marketplace</artifactId>
+      <type>zip</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.distribution</groupId>
+      <artifactId>nuxeo-distribution-tomcat</artifactId>
+      <classifier>nuxeo-cap</classifier>
+      <type>zip</type>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
