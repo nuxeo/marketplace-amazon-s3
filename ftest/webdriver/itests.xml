@@ -1,9 +1,6 @@
-<project name="integration-tests"
-         xmlns:nx="urn:nuxeo-build"
-         xmlns:artifact="urn:nuxeo-artifact">
+<project name="s3-integration-tests" xmlns:nx="urn:nuxeo-build" xmlns:artifact="urn:nuxeo-artifact">
   <taskdef resource="org/nuxeo/build/antlib.xml" uri="urn:nuxeo-build" />
-  <taskdef resource="org/nuxeo/build/artifact/antlib.xml"
-           uri="urn:nuxeo-artifact" />
+  <taskdef resource="org/nuxeo/build/artifact/antlib.xml" uri="urn:nuxeo-artifact" />
   <taskdef resource="net/sf/antcontrib/antlib.xml" />
 
   <property name="out.dir" value="${maven.project.build.directory}" />
@@ -15,8 +12,7 @@
   </unzip>
   <import file="${out.dir}/nuxeo-ftest.xml" />
 
-  <property name="mp.install"
-            value="file:${out.dir}/marketplace-${marketplace.s3binaries.version}.zip" />
+  <property name="mp.install" value="file:${out.dir}/marketplace-${marketplace.s3binaries.version}.zip" />
 
   <target name="prepare-bucket">
     <antcall target="set-conf">
@@ -44,14 +40,12 @@
     </exec>
   </target>
 
-  <target name="prepare-s3-environment"
-          depends="prepare-environment,prepare-bucket">
+  <target name="prepare-s3-environment" depends="prepare-environment,prepare-bucket">
     <copy todir="${out.dir}">
       <artifact:resolveFile key="org.nuxeo.marketplace.amazon-s3-online-storage:marketplace::zip" />
     </copy>
   </target>
 
-  <target name="cleanup-s3-environment"
-          depends="cleanup-environment,cleanup-bucket" />
+  <target name="cleanup-s3-environment" depends="cleanup-environment,cleanup-bucket" />
 
 </project>
