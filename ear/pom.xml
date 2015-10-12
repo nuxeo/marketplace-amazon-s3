@@ -22,6 +22,11 @@
       <groupId>org.nuxeo.ecm.core</groupId>
       <artifactId>nuxeo-core-binarymanager-s3</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.core</groupId>
+      <artifactId>nuxeo-core-binarymanager-common</artifactId>
+      <type>jar</type>
+    </dependency>
   </dependencies>
 
   <build>
