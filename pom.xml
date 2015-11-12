@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>7.10</version>
+    <version>7.10-HF01-SNAPSHOT</version>
   </parent>
 
   <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
@@ -41,6 +41,28 @@
   </dependencyManagement>
 
   <repositories>
+    <!-- Hotfix Repositories -->
+    <repository>
+      <id>hotfix-releases</id>
+      <url>https://maven.nuxeo.org/nexus/content/repositories/hotfix-releases</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>hotfix-snapshots</id>
+      <url>https://maven.nuxeo.org/nexus/content/repositories/hotfix-snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
     <repository>
       <id>public</id>
       <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
