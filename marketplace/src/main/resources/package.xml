@@ -14,6 +14,9 @@
     <platform>cap-@DISTVERSION@</platform>
     <platform>cap-@DISTVERSION@-HF*</platform>
   </platforms>
+  <dependencies>
+     <package>nuxeo-6.0-HF23:1.0.0</package>
+  </dependencies>
   <hotreload-support>false</hotreload-support>
   <supported>true</supported>
   <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
