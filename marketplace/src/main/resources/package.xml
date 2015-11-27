@@ -11,12 +11,9 @@
   </description>
   <home-page>https://doc.nuxeo.com/x/HABu</home-page>
   <platforms>
-    <platform>cap-6.0</platform>
-    <platform>cap-6.0-HF*</platform>
+    <platform>cap-@DISTVERSION@</platform>
+    <platform>cap-@DISTVERSION@-HF*</platform>
   </platforms>
-  <dependencies>
-     <package>nuxeo-@DISTVERSION@:1.0.0</package>
-  </dependencies>
   <hotreload-support>false</hotreload-support>
   <supported>true</supported>
   <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
