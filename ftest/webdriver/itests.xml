@@ -39,10 +39,6 @@
     <exec executable="s3cmd">
       <arg line="del s3://nuxeo-mp-s3-test/2474b54476c8ec0ec8560eeb99f4434d" />
     </exec>
-    <echo message="Destroying bucket." />
-    <exec executable="s3cmd">
-      <arg line="rb s3://nuxeo-mp-s3-test" />
-    </exec>
   </target>
 
   <target name="prepare-s3-environment"
