@@ -14,18 +14,18 @@
       </filterset>
     </copy>
     <copy todir="${maven.project.build.directory}">
-      <artifact:file key="org.nuxeo.ecm.distribution:nuxeo-distribution-cap::zip" />
+      <artifact:file key="org.nuxeo.ecm.distribution:nuxeo-nxr-server::zip" />
       <artifact:file key="${maven.project.groupId}:ear::zip" />
     </copy>
     <nx:zipdiff file1="${maven.project.build.directory}/ear-${marketplace.s3binaries.version}.zip"
-                file2="${maven.project.build.directory}/nuxeo-distribution-cap-${nuxeo.distribution.version}.zip"
+                file2="${maven.project.build.directory}/nuxeo-nxr-server-${nuxeo.distribution.version}.zip"
                 includesfile="${maven.project.build.directory}/includes"
                 excludesfile="${maven.project.build.directory}/excludesfile"
-                patternsetid="s3binaries.versus.cap">
+                patternsetid="s3binaries.versus.server">
     </nx:zipdiff>
     <unzip src="${maven.project.build.directory}/ear-${marketplace.s3binaries.version}.zip"
            dest="${maven.project.build.directory}/marketplace/install">
-      <patternset refid="s3binaries.versus.cap" />
+      <patternset refid="s3binaries.versus.server" />
     </unzip>
 
     <!-- s3binaries template -->
