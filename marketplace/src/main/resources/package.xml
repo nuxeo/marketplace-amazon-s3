@@ -11,7 +11,8 @@
   </description>
   <home-page>https://doc.nuxeo.com/nxdoc/amazon-s3-online-storage/</home-page>
   <platforms>
-    <platform>server-@DISTVERSION@*</platform>
+    <platform>server-@DISTVERSION@</platform>
+    <platform>server-@DISTVERSION@-*</platform>
   </platforms>
   <hotreload-support>false</hotreload-support>
   <supported>true</supported>
