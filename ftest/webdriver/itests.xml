@@ -10,7 +10,9 @@
   </unzip>
   <import file="${out.dir}/nuxeo-ftest.xml" />
 
-  <property name="mp.install" value="nuxeo-jsf-ui, file:${out.dir}/marketplace-${marketplace.s3binaries.version}.zip" />
+  <property name="mp.install"
+            value="file:${out.dir}/nuxeo-marketplace-jsf-ui-${nuxeo.distribution.version}.zip,
+    file:${out.dir}/marketplace-${marketplace.s3binaries.version}.zip" />
 
   <target name="prepare-bucket">
     <antcall target="set-conf">
@@ -36,6 +38,7 @@
 
   <target name="prepare-s3-environment" depends="prepare-environment,prepare-bucket">
     <copy todir="${out.dir}">
+      <artifact:file key="org.nuxeo.ecm.distribution:nuxeo-marketplace-jsf-ui::zip" />
       <artifact:file key="org.nuxeo.marketplace.amazon-s3-online-storage:marketplace::zip" />
     </copy>
   </target>
