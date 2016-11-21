@@ -1,13 +1,6 @@
 <package type="addon" name="amazon-s3-online-storage" version="@VERSION@">
   <title>Amazon S3 Online Storage</title>
-  <description>
-    Amazon S3 Online Storage is a component of the Nuxeo platform
-    that offers the option of storing files - the attachments that are
-    uploaded within a content object, Nuxeo binaries - in an Amazon S3 bucket.
-
-    After installation, some configuration steps must be taken in order
-    for this addon to be enabled and use the proper credentials.
-    Check the linked page for installation instructions.
+  <description>The Amazon S3 Online Storage addon is a Nuxeo Binary Manager for S3 object store. It stores files (the attached documents) in an Amazon S3 bucket, with server side and client side encryption support.
   </description>
   <home-page>https://doc.nuxeo.com/nxdoc/amazon-s3-online-storage/</home-page>
   <platforms>
