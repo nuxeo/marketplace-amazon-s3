@@ -21,7 +21,7 @@
     </antcall>
     <antcall target="set-conf">
       <param name="name" value="nuxeo.s3storage.region" />
-      <param name="value" value="EU" />
+      <param name="value" value="eu-west-1" />
     </antcall>
   </target>
 
