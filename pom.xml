@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>8.10-HF29-SNAPSHOT</version>
+    <version>8.10-HF30-SNAPSHOT</version>
   </parent>
 
   <groupId>org.nuxeo.marketplace.amazon-s3-online-storage</groupId>
