@@ -6,6 +6,7 @@ nuxeo.s3storage.bucket=
 nuxeo.s3storage.awsid=
 nuxeo.s3storage.awssecret=
 nuxeo.s3storage.region=
+nuxeo.s3storage.bucket_prefix=
 nuxeo.s3storage.cachesize=
 nuxeo.s3storage.crypt.keystore.file=
 nuxeo.s3storage.crypt.keystore.password=
@@ -20,5 +21,6 @@ nuxeo.s3storage.transient.bucket=
 nuxeo.s3storage.transient.awsid=
 nuxeo.s3storage.transient.awssecret=
 nuxeo.s3storage.transient.region=
+nuxeo.s3storage.transient.bucket_prefix=
 nuxeo.s3storage.transient.targetMaxSizeMB=100
 
