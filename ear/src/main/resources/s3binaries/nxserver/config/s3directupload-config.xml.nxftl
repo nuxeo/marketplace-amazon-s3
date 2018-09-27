@@ -22,7 +22,7 @@
       <property name="awssecret">${nuxeo.s3storage.transient.awssecret}</property>
       <property name="bucket">${nuxeo.s3storage.transient.bucket}</property>
       <property name="region">${nuxeo.s3storage.transient.region}</property>
-      <property name="bucket.prefix"></property>
+      <property name="bucket_prefix">${nuxeo.s3storage.transient.bucket_prefix}</property>
       <property name="cachesize">100MB</property>
       <property name="connection.max">50</property>
       <property name="connection.retry">3</property>
@@ -42,10 +42,11 @@
       <property name="awssecret">${nuxeo.s3storage.transient.awssecret}</property>
       <property name="bucket">${nuxeo.s3storage.transient.bucket}</property>
       <property name="region">${nuxeo.s3storage.transient.region}</property>
+      <property name="bucket_prefix">${nuxeo.s3storage.transient.bucket_prefix}</property>
       <property name="policyTemplate">{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":"s3:PutObject","Resource":["arn:aws:s3:::${nuxeo.s3storage.transient.bucket}/*"]}]}</property>
     </batchHandler>
   </extension>
 
 </#if>
-  
+
 </component>
