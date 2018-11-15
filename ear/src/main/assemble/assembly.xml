@@ -73,6 +73,9 @@
     <artifact:attach file="${outdir}/${maven.project.artifactId}-${maven.project.version}-resources.zip"
                      type="zip"
                      classifier="resources" />
+
+    <!-- cleanups -->
+    <delete dir="${outdir}/nuxeo.ear" failonerror="false" />
   </target>
 
 </project>
