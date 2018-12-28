@@ -12,6 +12,8 @@
       <property name="bucket">${nuxeo.s3storage.bucket}</property>
       <property name="region">${nuxeo.s3storage.region}</property>
       <property name="bucket_prefix">${nuxeo.s3storage.bucket_prefix}</property>
+      <!-- min file age, in second, to be removed from cache if the size max size is reached, default is 3600 -->
+      <property name="cacheminage">60</property>
       <property name="cachesize">100MB</property>
       <property name="connection.max">50</property>
       <property name="connection.retry">3</property>
