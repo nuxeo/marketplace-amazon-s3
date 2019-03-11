@@ -14,7 +14,7 @@
 
   <properties>
     <marketplace.s3binaries.version>1.10.0-SNAPSHOT</marketplace.s3binaries.version>
-    <nuxeo.target.version>11.1</nuxeo.target.version>
+    <nuxeo.target.version>11.1-SNAPSHOT</nuxeo.target.version>
   </properties>
 
   <dependencyManagement>
