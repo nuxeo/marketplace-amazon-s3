@@ -10,10 +10,10 @@
   <artifactId>amazon-s3-online-storage-parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo S3 Storage Marketplace Parent</name>
-  <version>1.8.8-SNAPSHOT</version>
+  <version>1.8.9-SNAPSHOT</version>
 
   <properties>
-    <marketplace.s3binaries.version>1.8.8-SNAPSHOT</marketplace.s3binaries.version>
+    <marketplace.s3binaries.version>1.8.9-SNAPSHOT</marketplace.s3binaries.version>
     <nuxeo.target.version>9.10</nuxeo.target.version>
   </properties>
 
