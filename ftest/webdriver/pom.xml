@@ -11,6 +11,18 @@
   <name>Nuxeo S3 Storage WebDriver Tests</name>
   <description>WebDriver functional tests on S3 Storage package</description>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>nuxeo-jsf-ui</artifactId>
+        <version>${nuxeo.distribution.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
