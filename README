@@ -1,6 +1,0 @@
-To run the tests, use '-Pitest' (or run from ftest/webdriver).
-
-This requires:
-- having your AWS ID and secret key in your environment (used by the binary manager)
-- having s3cmd installed and configured with the same keys (used for cleanup)
-
