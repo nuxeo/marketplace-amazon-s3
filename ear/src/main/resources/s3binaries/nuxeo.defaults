@@ -16,6 +16,7 @@ nuxeo.s3storage.region=
 nuxeo.s3storage.cachesize=
 nuxeo.s3storage.endpoint=
 nuxeo.s3storage.pathstyleaccess=false
+nuxeo.s3storage.accelerateMode=false
 nuxeo.s3storage.bucket_prefix=
 nuxeo.s3storage.crypt.keystore.file=
 nuxeo.s3storage.crypt.keystore.password=
@@ -39,5 +40,6 @@ nuxeo.s3storage.transient.region=
 # optional
 nuxeo.s3storage.transient.endpoint=
 nuxeo.s3storage.transient.pathstyleaccess=false
+nuxeo.s3storage.transient.accelerateMode=false
 nuxeo.s3storage.transient.bucket_prefix=
 nuxeo.s3storage.transient.crypt.serverside=false
