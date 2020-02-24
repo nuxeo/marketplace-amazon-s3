@@ -27,6 +27,7 @@
       <property name="bucket">${nuxeo.s3storage.transient.bucket}</property>
       <property name="endpoint">${nuxeo.s3storage.transient.endpoint}</property>
       <property name="pathstyleaccess">${nuxeo.s3storage.transient.pathstyleaccess}</property>
+      <property name="accelerateMode">${nuxeo.s3storage.transient.accelerateMode}</property>
       <property name="region">${nuxeo.s3storage.transient.region}</property>
       <property name="bucket_prefix">${nuxeo.s3storage.transient.bucket_prefix}</property>
       <property name="cachesize">100MB</property>
@@ -73,6 +74,7 @@
       <property name="bucket">${nuxeo.s3storage.transient.bucket}</property>
       <property name="endpoint">${nuxeo.s3storage.transient.endpoint}</property>
       <property name="pathstyleaccess">${nuxeo.s3storage.transient.pathstyleaccess}</property>
+      <property name="accelerateMode">${nuxeo.s3storage.transient.accelerateMode}</property>
       <property name="region">${nuxeo.s3storage.transient.region}</property>
       <property name="bucket_prefix">${nuxeo.s3storage.transient.bucket_prefix}</property>
       <property name="policyTemplate">{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":"s3:PutObject","Resource":["arn:aws:s3:::${nuxeo.s3storage.transient.bucket}/*"]}]}</property>

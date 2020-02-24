@@ -14,6 +14,7 @@
       <property name="region">${nuxeo.s3storage.region}</property>
       <property name="endpoint">${nuxeo.s3storage.endpoint}</property>
       <property name="pathstyleaccess">${nuxeo.s3storage.pathstyleaccess}</property>
+      <property name="accelerateMode">${nuxeo.s3storage.accelerateMode}</property>
       <property name="bucket_prefix">${nuxeo.s3storage.bucket_prefix}</property>
       <property name="cachesize">100MB</property>
       <property name="connection.max">50</property>
