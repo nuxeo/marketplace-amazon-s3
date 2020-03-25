@@ -7,6 +7,9 @@
     <platform>server-@DISTVERSION@</platform>
     <platform>server-@DISTVERSION@-*</platform>
   </platforms>
+  <dependencies>
+    <package>nuxeo-10.10-HF23</package>
+  </dependencies>
   <hotreload-support>false</hotreload-support>
   <supported>true</supported>
   <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
