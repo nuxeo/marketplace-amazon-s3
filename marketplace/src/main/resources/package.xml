@@ -8,7 +8,7 @@
     <platform>server-@DISTVERSION@-*</platform>
   </platforms>
   <dependencies>
-    <package>nuxeo-10.10-HF23</package>
+    <package>nuxeo-10.10-HF31</package>
   </dependencies>
   <hotreload-support>false</hotreload-support>
   <supported>true</supported>
