@@ -23,7 +23,7 @@
       <property name="connection.retry">3</property>
       <property name="connection.timeout">50000</property>
       <property name="socket.timeout">50000</property>
-      <property name="keyStrategy">${nuxeo.core.blobstore.keyStrategy}</property>
+      <property name="digestAsync">${nuxeo.core.blobstore.digestAsync}</property>
     </blobprovider>
   </extension>
 
