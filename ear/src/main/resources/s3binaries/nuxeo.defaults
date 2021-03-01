@@ -15,6 +15,12 @@ nuxeo.s3storage.region=
 
 # optional
 nuxeo.s3storage.cachesize=
+nuxeo.s3storage.cacheminage=60
+nuxeo.s3storage.cachesize=100MB
+nuxeo.s3storage.connection.max=50
+nuxeo.s3storage.connection.retry=3
+nuxeo.s3storage.connection.timeout=50000
+nuxeo.s3storage.socket.timeout=50000
 nuxeo.s3storage.endpoint=
 nuxeo.s3storage.pathstyleaccess=false
 nuxeo.s3storage.accelerateMode=false
